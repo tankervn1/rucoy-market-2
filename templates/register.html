@@ -1,1 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="auth-container">
+    <div class="auth-box">
+        <h2>📝 Đăng ký</h2>
+        <form method="post">
+            <input type="text" name="username" placeholder="Tên đăng nhập" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Mật khẩu" required>
+            <input type="password" name="confirm" placeholder="Nhập lại mật khẩu" required>
+            <button type="submit">Tạo tài khoản</button>
+        </form>
+        <p>Đã có tài khoản? <a href="/login">Đăng nhập</a></p>
+    </div>
+</div>
+
+{% endblock %}
 
