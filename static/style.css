@@ -1,1 +1,34 @@
 
+
+body {
+    background: #0b0f1a;
+    color: white;
+    font-family: Arial;
+    margin: 0;
+}
+
+header {
+    background: #111827;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: #9ca3af;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.market {
+    padding: 30px;
+}
+
+.card {
+    background: #111827;
+    width: 200px;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
