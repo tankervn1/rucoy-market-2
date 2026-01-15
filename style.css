@@ -1,13 +1,12 @@
-
 body {
-    background: #0b0f1a;
+    background: #0f172a;
     color: white;
     font-family: Arial;
     margin: 0;
 }
 
 header {
-    background: #111827;
+    background: #020617;
     padding: 15px 30px;
     display: flex;
     justify-content: space-between;
@@ -15,19 +14,42 @@ header {
 }
 
 nav a {
-    color: #9ca3af;
-    margin-left: 20px;
+    color: #38bdf8;
+    margin-left: 15px;
     text-decoration: none;
 }
 
-.market {
+.market, .auth {
     padding: 30px;
 }
 
 .card {
-    background: #111827;
+    background: #020617;
     width: 200px;
     padding: 15px;
-    border-radius: 8px;
+    border-radius: 10px;
     text-align: center;
+}
+
+button {
+    background: #22c55e;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.auth form {
+    max-width: 300px;
+    background: #020617;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.auth input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
 }
