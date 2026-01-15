@@ -1,55 +1,98 @@
-body {
-    background: #0f172a;
-    color: white;
-    font-family: Arial;
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
 }
 
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    min-height: 100vh;
+    color: #fff;
+}
+
+/* HEADER */
 header {
-    background: #020617;
-    padding: 15px 30px;
+    background: rgba(0,0,0,0.6);
+    padding: 20px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+header h1 {
+    color: #00ffd5;
+}
+
 nav a {
-    color: #38bdf8;
-    margin-left: 15px;
+    margin-left: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #00ffd5;
+}
+
+/* AUTH BOX */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px);
+}
+
+.auth-box {
+    background: rgba(0,0,0,0.75);
+    padding: 40px;
+    width: 360px;
+    border-radius: 14px;
+    box-shadow: 0 0 25px rgba(0,255,213,0.25);
+}
+
+.auth-box h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #00ffd5;
+}
+
+.auth-box input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.auth-box button {
+    width: 100%;
+    padding: 12px;
+    background: #00ffd5;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.auth-box button:hover {
+    background: #00c9aa;
+}
+
+.auth-box p {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.auth-box a {
+    color: #00ffd5;
     text-decoration: none;
 }
 
-.market, .auth {
-    padding: 30px;
-}
-
-.card {
-    background: #020617;
-    width: 200px;
-    padding: 15px;
-    border-radius: 10px;
-    text-align: center;
-}
-
-button {
-    background: #22c55e;
-    border: none;
-    padding: 8px 15px;
-    border-radius: 6px;
-    cursor: pointer;
-}
-
-.auth form {
-    max-width: 300px;
-    background: #020617;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.auth input {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: none;
+.auth-box a:hover {
+    text-decoration: underline;
 }
